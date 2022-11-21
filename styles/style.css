@@ -1,0 +1,123 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: black;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 0%;
+}
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(61, 61, 61);
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+
+    vertical-align: center;
+    border-radius: 20px;
+    margin: 17% 0 0 16%;
+    width: 66%;
+    transition: all 0.2s;
+}
+
+.logo , .logo2{
+    display: flex;
+    align-items: center;
+    /* Para Referencia Pagina */
+    flex-direction: column;
+}
+
+.logo img, .logo2 img{
+    height: 70px;
+    margin-right: 10px;
+}
+
+.nav-header a{
+    font-size: 28px;
+    padding-right: 40px;
+}
+
+.nav-header a:hover{
+    color: aqua;
+}
+
+.nav-link, .logo a, .logo2 a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Referencia Página */
+.ref-pag{
+    font-family: Oxygen;
+    color: white;
+}
+
+
+@media (max-width:1720px){
+    header{
+        margin: 23% 0 0 12%;
+        width: 74%;
+    }
+}
+
+@media (max-width:1280px){
+    header{
+        margin-top: 30%;
+    }
+    .nav-header a{
+        font-size: 22px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width:984px){
+    header{
+        margin-top: 35%;
+    }
+    .logo img, .logo2 img{
+        height: 60px;
+        margin-right: 10px;
+    }
+    .nav-header a{
+        font-size: medium;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:840px){
+    header{
+        margin-top: 40%;
+    }
+}
+
+@media (max-width:740px){
+    header{
+        margin-top: 45%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:650px){
+    header{
+        margin-top: 60%;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+@media (max-width:500px){
+    header{
+        margin-top: 80%;
+    }
+}
+@media (max-width:370px){
+    header{
+        margin-top: 100%;
+    }
+}
