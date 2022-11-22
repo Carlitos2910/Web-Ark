@@ -12,7 +12,7 @@
 
     <?php include './Paginas/header.php' ?>
 
-    <?php include './Paginas/footer_moderno.php' ?>
+    <?php include './Paginas/footer.php' ?>
 
 
 </body>
