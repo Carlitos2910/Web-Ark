@@ -7,10 +7,10 @@
     // Creamos la conexion.
     $conexion = new mysqli($servername, $username, $password, $database);
     // Comprobamos la conexión.
-    if (!$conexion){
-        die ('La conexión ha fallado: '. mysqli_connect_error());
-    }
-    echo "<i style='color:red'> Conexión realizada correctamente Procedimental </i>";
+    // if (!$conexion){
+    //     die ('La conexión ha fallado: '. mysqli_connect_error());
+    // }
+    // echo "<i style='color:red'> Conexión realizada correctamente Procedimental </i>";
 
 ?>
 
@@ -21,17 +21,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Dinosaurs </title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <style>
-        header{
-            background-color: #00ff75;
+        .dinosaurios{
+            text-align: center;
+            max-width: 1200px;
+            justify-content: center;
+            margin: auto;
+        }
+        select {
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+            background-color: white;
+            box-shadow: 0 2px 0 black;
+            border-radius: 2px;
+        }
+        .btn{
+            padding: 7px;
+            border-radius: 4px;
+            background-color: #009003;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color .15s;
+        }
+        .btn:hover{
+            background-color: #00FF05;
         }
     </style>
 </head>
 <body>
-    <header>
+    <?php include './Paginas/header.php' ?>
+
+    <div class="dinosaurios">
         <h1> Proyecto ARK </h1>
         <form id="form_mostrar" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-            <p>Dinosaurs:
                 <?php
                     // Consultar la base de datos
                     $sql = 'SELECT * FROM ark.dinosaurios';
@@ -44,27 +70,30 @@
                     echo "</select>";
                 ?>
 
-                    <button type="submit" name="mostrar">Mostrar Datos del Dinosaurio</button>
-            </p>
+                    <button type="submit" class="btn" name="mostrar">Mostrar Datos del Dinosaurio</button>
         </form>
-    </header>
+
         <?php
             if($_SERVER["REQUEST_METHOD"]=="POST"){
                 if(isset($_POST['mostrar'])){
-                    echo "<h2> Dinosaurio:</h2>";
+                    echo "<h2> DINOSAURIO SELECCIONADO:</h2>";
 
                     $dinosaur=$_REQUEST['valores'];
                     $sql3 = "SELECT nombre, descripcion, imagen FROM dinosaurios WHERE codigo='$dinosaur'";
                     $query3 = $conexion->query($sql3);
 
                     while ($row = mysqli_fetch_assoc($query3)) {
-                        echo "<p>Dinosaurio: ". $row['nombre']. " <br>Descripcion: " . $row['descripcion']. " <br>Imagen: <img  width='500px' src='./images/Dossier/".$row['imagen']."'></p>";
+                        echo "<p><b>DINOSAURIO:</b> ". $row['nombre']. " <br><b>DESCRIPCION:</b> " . $row['descripcion']. " <br><b>Imagen:</b> <img  width='500px' src='./images/Dossier/".$row['imagen']."'></p>";
                     }
                     echo "<div>";
                 }
             }
 
         ?>
+
+    </div>
+
+    <?php include './Paginas/footer.php' ?>
 </body>
 </html>
 

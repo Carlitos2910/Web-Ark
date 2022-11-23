@@ -6,22 +6,22 @@
         </a>
         <i class="ref-pag">
             <?php
-                if($_SERVER['REQUEST_URI'] == '/Ark/index.php'){
-                    echo 'Inicio';
-                }else if($_SERVER['REQUEST_URI'] == '/Ark/mapas.php'){
-                    echo 'Mapas';
-                }else if($_SERVER['REQUEST_URI'] == '/Ark/eventos.php'){
-                    echo 'Eventos';
-                }else if($_SERVER['REQUEST_URI'] == '/Ark/dinosaurios.php'){
-                    echo 'Dinosaurios';
+                if($_SERVER['REQUEST_URI'] == '/Web-Ark/index.php'){
+                    echo 'Index';
+                }else if($_SERVER['REQUEST_URI'] == '/Web-Ark/maps.php'){
+                    echo 'Maps';
+                }else if($_SERVER['REQUEST_URI'] == '/Web-Ark/events.php'){
+                    echo 'Events';
+                }else if($_SERVER['REQUEST_URI'] == '/Web-Ark/dinosaurs.php'){
+                    echo 'Dinosaurs';
                 }
             ?>
         </i>
     </div>
     <nav class="nav-header">
-        <a href="" class="nav-link"> MAPAS </a>
-        <a href="" class="nav-link"> EVENTOS </a>
-        <a href="" class="nav-link"> DINOSAURIOS </a>
+        <a href="maps.php" class="nav-link"> MAPAS </a>
+        <a href="events.php" class="nav-link"> EVENTOS </a>
+        <a href="dinosaurs.php" class="nav-link"> DINOSAURIOS </a>
     </nav>
     <div class="logo2">
         <a href="">
