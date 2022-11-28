@@ -50,6 +50,10 @@
         .btn:hover{
             background-color: #00FF05;
         }
+
+        .color_tabla{
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -76,16 +80,21 @@
         <?php
             if($_SERVER["REQUEST_METHOD"]=="POST"){
                 if(isset($_POST['mostrar'])){
-                    echo "<h2> DINOSAURIO SELECCIONADO:</h2>";
-
                     $dinosaur=$_REQUEST['valores'];
                     $sql3 = "SELECT nombre, descripcion, imagen FROM dinosaurios WHERE codigo='$dinosaur'";
                     $query3 = $conexion->query($sql3);
 
                     while ($row = mysqli_fetch_assoc($query3)) {
-                        echo "<p><b>DINOSAURIO:</b> ". $row['nombre']. " <br><b>DESCRIPCION:</b> " . $row['descripcion']. " <br><b>Imagen:</b> <img  width='500px' src='./images/Dossier/".$row['imagen']."'></p>";
+                        echo "<table border='1'>";
+                        echo "<thead><h1 class='color_tabla'>".$row['nombre']."</h1></thead>";
+                        echo "<tr>";
+                            echo "<td width='50%'>";
+                                echo "<img width='90%' src='./images/Dossier/".$row['imagen']."'>";
+                            echo "</td>";
+                            echo "<td class='color_tabla' width='50%'>".$row['descripcion']."</td>";
+                        echo "</tr>";
+                        echo "</table>";
                     }
-                    echo "<div>";
                 }
             }
 

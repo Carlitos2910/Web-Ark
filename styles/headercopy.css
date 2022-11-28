@@ -28,7 +28,7 @@ body{
     max-width: 1280px;
 }
 
-.logo, .logo2{
+.logo , .logo2{
     display: flex;
     align-items: center;
     /* Para Referencia Pagina */
@@ -80,7 +80,7 @@ body{
     }
 }
 
-@media (max-width:808px){
+@media (max-width:790px){
     header{
         flex-direction: column;
     }
@@ -92,23 +92,11 @@ body{
     }
 }
 
-
-
-
-
-
-
-
-/* --------------------- */
-/* --------------------- */
-/* --------------------- */
-/* --------------------- */
-/* --------------------- */
-/* --------------------- */
-/* --------------------- */
-
-
-
+/* @media (max-width:650px){
+    nav{
+        padding: 10px 0px;
+    }
+} */
 
 
 /* MOVIL */
@@ -121,68 +109,94 @@ body{
     }
 }
 
-@media (min-width:501px){
+
+@media (min-width:499px){
     .header2{
         display: none;
     }
 }
 
-
-
-
-
 .header2 {
-	width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: rgb(61, 61, 61);
+    align-items: center;
+    padding: 10px;
+
+    vertical-align: center;
+    border-radius: 20px;
+    width: 100%;
+    transition: all 0.2s;
     margin: auto;
+    max-width: 1280px;
 }
 
-.menu2 {
-    display:block;
-    width:100%;
-    /* position: fixed; */
-    top:0;
-    background:#E6344A;
+.nav2{
+    background: #2fcdcd;
+    height: 80px;
+    width: 100%;
 }
-.menu2 .bt-menu2 {
+.enlace{
+    position: absolute;
+    /* padding: 20px 50px; */
+    padding: 20px 50px auto 20px;
+}
+.logo{
+    height: 40px;
+}
+.nav2 ul{
+    float: right;
+    margin-right: 20px;
+}
+.nav2 ul li{
     display: block;
-    padding: 20px;
+    line-height: 30px;
+    margin: 50px 0;
+}
+.nav2 ul li a{
     color: #fff;
-    overflow: hidden;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: none;
+    font-size: 16px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
-
-.header2 nav {
-    background:#023859;
-    z-index:1000;
-    max-width: 1000px;
-    /* margin:20px auto; */
-
-    width: 80%;
-    height: calc(100% - 80px);
-    position: fixed;
-    right:100%;
-    overflow: scroll;
+li a.active, li a:hover{
+    background: none;
+    transition: .5s;
+    color: red;
 }
-
-.header2 nav ul {
-	list-style:none;
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: block;
 }
-
-.header2 nav ul li {
-	display:block;
-	position: relative;
-    border-bottom:1px solid rgba(255,255,255,.5);
+#check{
+    display: none;
 }
-
-.header2 nav ul li:hover {
-	background:#E6344A;
+        #check:checked ~ ul{
+            left:0;
+        }
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
 }
-
-.header2 nav ul li a {
-	color:#fff;
-	display:block;
-	text-decoration:none;
-	padding: 20px;
-}
+ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
