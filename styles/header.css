@@ -19,11 +19,10 @@ body{
 
     vertical-align: center;
     border-radius: 20px;
-    /* margin: 17% 0 0 16%; */
+
     width: 66%;
     transition: all 0.2s;
 
-    /* PRUEBA */
     margin: auto;
     max-width: 1280px;
 }
@@ -113,76 +112,16 @@ body{
 
 /* MOVIL */
 @media (max-width:500px){
-    .header1{
+    /* .header1{
         display: none;
     }
     nav{
         padding: 10px 0px;
-    }
+    } */
 }
 
 @media (min-width:501px){
-    .header2{
+    /* .header2{
         display: none;
-    }
-}
-
-
-
-
-
-.header2 {
-	width: 100%;
-    margin: auto;
-}
-
-.menu2 {
-    display:block;
-    width:100%;
-    /* position: fixed; */
-    top:0;
-    background:#E6344A;
-}
-.menu2 .bt-menu2 {
-    display: block;
-    padding: 20px;
-    color: #fff;
-    overflow: hidden;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.header2 nav {
-    background:#023859;
-    z-index:1000;
-    max-width: 1000px;
-    /* margin:20px auto; */
-
-    width: 80%;
-    height: calc(100% - 80px);
-    position: fixed;
-    right:100%;
-    overflow: scroll;
-}
-
-.header2 nav ul {
-	list-style:none;
-}
-
-.header2 nav ul li {
-	display:block;
-	position: relative;
-    border-bottom:1px solid rgba(255,255,255,.5);
-}
-
-.header2 nav ul li:hover {
-	background:#E6344A;
-}
-
-.header2 nav ul li a {
-	color:#fff;
-	display:block;
-	text-decoration:none;
-	padding: 20px;
+    } */
 }

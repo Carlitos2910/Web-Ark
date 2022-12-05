@@ -1,7 +1,6 @@
 <header class="header1">
     <div class="logo">
         <a href="index.php">
-            <img src="./images/Header/logo.png" alt="Logo Ark">
             <img src="./images/Header/logo2.png" alt="Logo Ark">
         </a>
         <i class="ref-pag">
@@ -28,20 +27,4 @@
             <img src="./images/Header/login.png" alt="LogIn">
         </a>
     </div>
-</header>
-
-
-<header class="header2">
-    <div class="menu2">
-        <a href="#" class="bt-menu2">Menú</a>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Mapas</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li><a href="#">Dinosaurios</a></li>
-        </ul>
-    </nav>
 </header>
