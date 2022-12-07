@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <?php include './Paginas/header.php' ?>
+    <?php include './Pages/header.php' ?>
 
     <div class="dinosaurios">
         <h1> Dinosaur Selection: </h1>
@@ -52,16 +52,6 @@
                     $query3 = $conexion->query($sql3);
 
                     while ($row = mysqli_fetch_assoc($query3)) {
-                        // echo "<table border='1'>";
-                        // echo "<thead><h1 class='color_tabla'>".$row['nombre']."</h1></thead>";
-                        // echo "<tr>";
-                        //     echo "<td width='50%'>";
-                        //         echo "<img width='90%' src='./images/Dossier/".$row['imagen']."'>";
-                        //     echo "</td>";
-                        //     echo "<td class='color_tabla' width='50%'>".$row['descripcion']."</td>";
-                        // echo "</tr>";
-                        // echo "</table>";
-
                         echo "<br><br><br><br>";
                         echo "<h1 class='dossier-title'>".$row['nombre']."</h1>";
                         echo "<div class='dossier'>";
@@ -80,7 +70,7 @@
 
     </div>
 
-    <?php include './Paginas/footer.php' ?>
+    <?php include './Pages/footer.php' ?>
 </body>
 </html>
 

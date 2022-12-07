@@ -187,6 +187,9 @@ body{
     .noticia p{
         color: white;
     }
+    .noticia a{
+        text-decoration: none;
+    }
 
     @media (max-width: 873px){
         .fondo-noticias{

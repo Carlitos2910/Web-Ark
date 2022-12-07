@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <?php include './Paginas/header.php' ?>
+    <?php include './Pages/header.php' ?>
 
     <div class="compra">
         <img src="images/Compra/compra.png" alt="PresentacionPágina">
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <?php include './Paginas/footer.php' ?>
+    <?php include './Pages/footer.php' ?>
 
 
 </body>
