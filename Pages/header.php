@@ -13,6 +13,8 @@
                     echo 'Events';
                 }else if($_SERVER['REQUEST_URI'] == '/Web-Ark/dinosaurs.php'){
                     echo 'Dinosaurs';
+                }else if($_SERVER['REQUEST_URI'] == '/Web-Ark/login.php'){
+                    echo 'LogIn';
                 }else{
                     echo 'Index';
                 }
@@ -25,7 +27,7 @@
         <a href="dinosaurs.php" class="nav-link"> DINOSAURIOS </a>
     </nav>
     <div class="logo2">
-        <a href="Paginas/login.php">
+        <a href="./login.php">
             <img src="./images/Header/login.png" alt="LogIn">
         </a>
     </div>
