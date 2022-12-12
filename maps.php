@@ -24,73 +24,85 @@
 
                     <div class="carousel-item">
                         <h2 class="subtitulo">The Island</h2>
-                        <img src="images/Maps/TheIsland.png" alt="TheIsland">
+                        <!-- <img src="images/Maps/TheIsland.png" alt="TheIsland"> -->
+                        <img src="images/Maps/SmallSize/TheIsland.png" alt="TheIsland">
                         <input type="button" onclick="showMore('TheIsland')" id="Button-TheIsland" value="Read More"/>
                     </div>
 
                     <div class="carousel-item">
                         <h2 class="subtitulo"> TheCenter</h2>
-                        <img src="images/Maps/TheCenter.png" alt="TheCenter">
+                        <!-- <img src="images/Maps/TheCenter.png" alt="TheCenter"> -->
+                        <img src="images/Maps/SmallSize/TheCenter.png" alt="TheCenter">
                         <input type="button" onclick="showMore('TheCenter')" id="Button-TheCenter" value="Read More"/>
                     </div>
 
                     <div class="carousel-item">
                         <h2 class="subtitulo"> Valguero</h2>
-                        <img src="images/Maps/Valguero.webp" alt="Valguero">
+                        <!-- <img src="images/Maps/Valguero.webp" alt="Valguero"> -->
+                        <img src="images/Maps/SmallSize/Valguero.png" alt="Valguero">
                         <input type="button" onclick="showMore('Valguero')" id="Button-Valguero" value="Read More"/>
                     </div>
 
                     <div class="carousel-item">
                         <h2 class="subtitulo"> Scorched </h2>
-                        <img src="images/Maps/Scorched.jpg" alt="Scorched">
+                        <!-- <img src="images/Maps/Scorched.jpg" alt="Scorched"> -->
+                        <img src="images/Maps/SmallSize/Se.png" alt="Scorched">
                         <input type="button" onclick="showMore('Scorched')" id="Button-Scorched" value="Read More"/>
                     </div>
 
                     <div class="carousel-item">
                         <h2 class="subtitulo"> Ragnarok</h2>
-                        <img src="images/Maps/Ragnarok.png" alt="Ragnarok">
+                        <!-- <img src="images/Maps/Ragnarok.png" alt="Ragnarok"> -->
+                        <img src="images/Maps/SmallSize/Ragna.png" alt="Ragnarok">
                         <input type="button" onclick="showMore('Ragnarok')" id="Button-Ragnarok" value="Read More"/>
                     </div>
 
                     <div class="carousel-item">
                         <h2 class="subtitulo"> Extincion </h2>
-                        <img src="images/Maps/Extincion.jpg" alt="Extincion">
+                        <!-- <img src="images/Maps/Extincion.jpg" alt="Extincion"> -->
+                        <img src="images/Maps/SmallSize/Ext.png" alt="Extincion">
                         <input type="button" onclick="showMore('Extincion')" id="Button-Extincion" value="Read More"/>
                     </div>
 
                     <div class="carousel-item">
                         <h2 class="subtitulo"> Aberration </h2>
-                        <img src="images/Maps/Aberration.jpg" alt="Aberration">
+                        <!-- <img src="images/Maps/Aberration.jpg" alt="Aberration"> -->
+                        <img src="images/Maps/SmallSize/Abe.png" alt="Aberration">
                         <input type="button" onclick="showMore('Aberration')" id="Button-Aberration" value="Read More"/>
                     </div>
 
                     <div class="carousel-item">
                         <h2 class="subtitulo"> CrystalIsles </h2>
-                        <img src="images/Maps/CrystalIsles.png" alt="CrystalIsles">
+                        <!-- <img src="images/Maps/CrystalIsles.png" alt="CrystalIsles"> -->
+                        <img src="images/Maps/SmallSize/Crystal.png" alt="CrystalIsles">
                         <input type="button" onclick="showMore('CrystalIsles')" id="Button-CrystalIsles" value="Read More"/>
                     </div>
 
                     <div class="carousel-item">
                         <h2 class="subtitulo"> Genesis </h2>
-                        <img src="images/Maps/Genesis.jpg" alt="Genesis">
+                        <!-- <img src="images/Maps/Genesis.jpg" alt="Genesis"> -->
+                        <img src="images/Maps/SmallSize/Gen.png" alt="Genesis">
                         <input type="button" onclick="showMore('Genesis')" id="Button-Genesis" value="Read More"/>
                     </div>
 
                     <div class="carousel-item">
                         <h2 class="subtitulo"> Genesis2 </h2>
-                        <img src="images/Maps/Genesis2.png" alt="Genesis2">
+                        <!-- <img src="images/Maps/Genesis2.png" alt="Genesis2"> -->
+                        <img src="images/Maps/SmallSize/Gen2.png" alt="Genesis2">
                         <input type="button" onclick="showMore('Genesis2')" id="Button-Genesis2" value="Read More"/>
                     </div>
 
                     <div class="carousel-item">
                         <h2 class="subtitulo"> LostIsland </h2>
-                        <img src="images/Maps/Lost Island.png" alt="LostIsland">
+                        <!-- <img src="images/Maps/Lost Island.png" alt="LostIsland"> -->
+                        <img src="images/Maps/SmallSize/Lost.png" alt="LostIsland">
                         <input type="button" onclick="showMore('LostIsland')" id="Button-LostIsland" value="Read More"/>
                     </div>
 
                     <div class="carousel-item">
                         <h2 class="subtitulo"> Fjordur </h2>
-                        <img src="images/Maps/Fjordur.png" alt="Fjordur">
+                        <!-- <img src="images/Maps/Fjordur.png" alt="Fjordur"> -->
+                        <img src="images/Maps/SmallSize/Fjor.png" alt="Fjordur">
                         <input type="button" onclick="showMore('Fjordur')" id="Button-Fjordur" value="Read More"/>
                     </div>
 
