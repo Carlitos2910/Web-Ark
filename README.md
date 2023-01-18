@@ -1,5 +1,7 @@
 # Web-Ark
 
+This Project is using PHP version 8.1.1 and MySql (XAMPP).
+
 This Web-Site has been made as a DAW project with (PHP, JavaScript, HTML5, CSS3).
 It consists of a web page based on the video game ARK, from the company Studio Wildcard.
 Inside it you will be able to find all the files and folders required for the Web-Site.
