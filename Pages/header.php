@@ -26,9 +26,9 @@
         <a href="events.php" class="nav-link"> EVENTOS </a>
         <a href="dinosaurs.php" class="nav-link"> DINOSAURIOS </a>
     </nav>
-    <div class="logo2">
+    <!-- <div class="logo2">
         <a href="./login.php">
             <img src="./images/Header/login.png" alt="LogIn">
         </a>
-    </div>
+    </div> -->
 </header>

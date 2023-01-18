@@ -1,19 +1,3 @@
-<?php
-
-    $servername = "localhost";
-    $database = "ark";
-    $username = "admin";
-    $password = "admin";
-    // Creamos la conexion.
-    $conexion = new mysqli($servername, $username, $password, $database);
-    // Comprobamos la conexión.
-    // if (!$conexion){
-    //     die ('La conexión ha fallado: '. mysqli_connect_error());
-    // }
-    // echo "<i style='color:red'> Conexión realizada correctamente Procedimental </i>";
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +8,23 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <?php
+
+        $servername = "localhost";
+        $database = "ark";
+        $username = "admin";
+        $password = "admin";
+        // Creamos la conexion.
+        $conexion = new mysqli($servername, $username, $password, $database);
+        // Comprobamos la conexión.
+        // if (!$conexion){
+        //     die ('La conexión ha fallado: '. mysqli_connect_error());
+        // }
+        // echo "<i style='color:red'> Conexión realizada correctamente Procedimental </i>";
+
+    ?>
+
+
     <?php include './Pages/header.php' ?>
 
     <div class="dinosaurios">
@@ -52,11 +53,16 @@
                     $query3 = $conexion->query($sql3);
 
                     while ($row = mysqli_fetch_assoc($query3)) {
-                        echo "<br><br><br><br>";
+                        echo "<br/><br/><br/><br/>";
                         echo "<h1 class='dossier-title'>".$row['nombre']."</h1>";
                         echo "<div class='dossier'>";
                             echo "<div class='dossier-img'>";
-                                echo "<img src='./images/Dossier/".$row['imagen']."'>";
+                                echo "<picture>";
+                                    echo "<source media='(max-width: 799px)' srcset='./images/DossierResponsive/300px".$row['imagen']."' />";
+                                    echo "<source media='(min-width: 800px) and (max-width: 1199)' srcset='../images/DossierResponsive/600px".$row['imagen']."' />";
+                                    echo "<source media='(min-width: 1200px) and (max-width: 1799)' srcset='../images/DossierResponsive/1000px".$row['imagen']."' />";
+                                    echo "<img src='./images/Dossier/".$row['imagen']."'>";
+                                echo "</picture>";
                             echo "</div>";
                             echo "<div class='dossier-texto'>";
                                 echo "<p>".$row['descripcion']."</p>";
