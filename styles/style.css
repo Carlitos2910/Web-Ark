@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --title:'Courier New', Courier, monospace;
     --text: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     --tamaño-pagina: 1200px;
@@ -15,7 +15,7 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 50% 0%;
-}
+} */
 
 
 
@@ -33,6 +33,7 @@ body{
 /* --------------------------- */
 /* --------------------------- */
 /* CSS PARA EL HEADER */
+/*
     .header1{
         display: flex;
         min-height: 70px;
@@ -60,7 +61,7 @@ body{
         display: flex;
         align-items: center;
         margin-bottom: 15px;
-        /* Para Referencia Pagina */
+        // Para Referencia Pagina
         flex-direction: column;
     }
 
@@ -87,12 +88,12 @@ body{
         color: white;
     }
 
-    /* Referencia Página */
+    // Referencia Página
     .ref-pag{
         color: white;
     }
 
-    /* RESPONSIVE MODIFICACIONES PARA EL HEADER.*/
+    // RESPONSIVE MODIFICACIONES PARA EL HEADER.
     @media (max-width:1280px){
         .nav-header a{
             font-size: 22px;
@@ -124,6 +125,7 @@ body{
             flex-direction: column;
         }
     }
+*/
 
 
 
@@ -141,14 +143,14 @@ body{
 /* --------------------------- */
 /* --------------------------- */
 /* CSS PARA EL APARTADO DE COMPRA DE LA WEB */
-    .compra{
+    /* .compra{
         max-width: var(--tamaño-pagina);
         padding-top: 80px;
         margin: auto;
     }
     .compra img{
         width: 100%;
-    }
+    } */
 
 
 
@@ -167,7 +169,7 @@ body{
 /* --------------------------- */
 /* --------------------------- */
 /* CSS PARA EL APARTADO DE NOTICIAS RECIENTES */
-    .fondo-noticias{
+    /* .fondo-noticias{
         background-image: url('../images/Noticias/bg_noticias.png');
         background-size: 100%;
         background-repeat: no-repeat;
@@ -238,7 +240,7 @@ body{
         .noticia:hover, .noticia:focus{
             transform: scale(0.9);
         }
-    }
+    } */
 
 
 
@@ -255,7 +257,7 @@ body{
 /* --------------------------- */
 /* --------------------------- */
 /* CSS PARA EL FOOTER*/
-    footer{
+    /* footer{
         width: 100%;
     }
 
@@ -295,7 +297,7 @@ body{
     }
 
 
-    /* SISTEMA CLASIFICACIÓN */
+    // SISTEMA CLASIFICACIÓN
     .box__footer2{
         padding: 40px;
         margin: auto;
@@ -315,8 +317,7 @@ body{
         padding: 0 20px 20px 20px;
     }
 
-
-    /* REDES SOCIALES */
+    // REDES SOCIALES
     .box__footer img.icon{
         height: 30px;
         vertical-align: middle;
@@ -334,7 +335,7 @@ body{
     }
 
 
-    /* COPYRIGHT */
+    // COPYRIGHT
     .box__copyright{
         max-width: 1200px;
         margin: auto;
@@ -351,7 +352,7 @@ body{
         border: none;
         height: 1px;
         background-color: #969696;
-    }
+    } */
 
 
 
@@ -369,7 +370,7 @@ body{
 /* ------------------------------ */
 /* ------------------------------ */
 /* CSS PARA LA PÁGINA DINOSAURIOS */
-    .dinosaurios{
+    /* .dinosaurios{
         text-align: center;
         max-width: 1200px;
         justify-content: center;
@@ -432,7 +433,7 @@ body{
             margin: auto;
             text-align: justify;
         }
-    }
+    } */
 
 
 
@@ -449,8 +450,8 @@ body{
 /* ------------------------------ */
 /* ------------------------------ */
 /* ------------------------------ */
-    /* Div Carousel Mapas */
-    .container{
+/* Div Carousel Mapas */
+    /* .container{
         max-width: 1200px;
         margin: auto;
     }
@@ -473,14 +474,14 @@ body{
         font-weight: 600;
         text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
         margin-top: 0;
-    }
+    } */
 
 
     /* ------------------------------ */
     /* INFORMACIÓN DE LOS MAPAS AL PULSAR EL BOTÓN. */
     /* ------------------------------ */
 
-    .info-mapas{
+    /* .info-mapas{
         max-width: 1200px;
         margin: auto;
 
@@ -508,14 +509,14 @@ body{
     .oculto p{
         color: white;
         text-align: justify;
-    }
+    } */
 
     /* ------------------- */
     /* ESTILOS DE MATERIALIZE */
     /* El Materialize servirá para el Carrousel de los mapas. */
     /* ------------------- */
 
-    .carousel{
+    /* .carousel{
         min-height: 500px;
     }
 
@@ -553,10 +554,10 @@ body{
         color: white;
         padding: 3px;
         border: 0;
-    }
+    } */
 
     /* RESPONSIVE cambiar tamaños de imagenes Carousel. */
-    @media (max-width: 985px){
+    /* @media (max-width: 985px){
         .carousel{
             min-width: 400px;
         }
@@ -574,4 +575,4 @@ body{
             width: 300px;
             height: 300px;
         }
-    }
+    } */

@@ -1,0 +1,256 @@
+/* CSS PARA EL FONDO DE TODAS LAS PAGINAS y el :root */
+:root{
+    --title:'Courier New', Courier, monospace;
+    --text: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --tamaño-pagina: 1200px;
+    --bg-color: #1E1E1E;
+}
+
+
+body{
+    font-family: var(--text);
+    margin: auto;
+    margin-top: 355px;
+    background-color: var(--bg-color);
+    background-image: url(../images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 0%;
+}
+
+/* CSS PARA EL HEADER */
+.header1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(51, 53, 51);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+
+    vertical-align: center;
+    border-radius: 20px;
+
+    width: 66%;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
+    margin: auto;
+    max-width: var(--tamaño-pagina);
+}
+
+.logo:hover, .logo2:hover{
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
+}
+
+.logo, .logo2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+    /* Para Referencia Pagina */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.logo img, .logo2 img{
+    height: 70px;
+    margin-right: 10px;
+}
+
+.nav-header a{
+    font-family: var(--title);
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 40px;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+}
+
+.nav-header a:hover{
+    color: rgb(0, 177, 59);
+    font-size: 32px;
+}
+
+.nav-link, .logo a, .logo2 a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Referencia Página */
+.ref-pag{
+    color: white;
+}
+
+/* RESPONSIVE MODIFICACIONES PARA EL HEADER.*/
+@media (max-width:1280px){
+    .nav-header a{
+        font-size: 22px;
+        padding-right: 25px;
+    }
+    .logo:hover, .logo2:hover{
+        -webkit-transition: -webkit-transform 1s;
+        transition: -webkit-transform 1s;
+        -o-transition: transform 1s;
+        transition: transform 1s;
+        transition: transform 1s, -webkit-transform 1s;
+        -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+                transform: scale(0.9);
+    }
+}
+
+@media (max-width:984px){
+    .nav-header a:hover{
+        color: rgb(0, 177, 59);
+        font-size: medium;
+    }
+    .logo img, .logo2 img{
+        height: 50px;
+        margin-right: 10px;
+    }
+    .nav-header a{
+        font-size: medium;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:808px){
+    header{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+
+/* CSS PARA EL FOOTER*/
+footer{
+    width: 100%;
+}
+
+.container__footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: var(--tamaño-pagina);
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px;
+    margin: auto;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.box__footer h2{
+    font-family: var(--title);
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+
+/* SISTEMA CLASIFICACIÓN */
+.box__footer2{
+    padding: 40px;
+    margin: auto;
+}
+
+.box__footer2 h2{
+    font-family: var(--title);
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+img.icon_pegi{
+    width: 65px;
+    height: 65px;
+    padding: 0 20px 20px 20px;
+}
+
+
+/* REDES SOCIALES */
+.box__footer img.icon{
+    height: 30px;
+    vertical-align: middle;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #969696;
+    font-weight: 600;
+    margin-left: 30%;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+
+/* COPYRIGHT */
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #969696;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #969696;
+}

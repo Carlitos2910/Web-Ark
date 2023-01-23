@@ -1,0 +1,146 @@
+/* Div Carousel Mapas */
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.titulo{
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--title);
+    font-size: 80px;
+    font-weight: bolder;
+    color: #009003;
+    text-transform: Uppercase;
+}
+
+.subtitulo {
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    margin-top: 0;
+}
+
+
+/* ------------------------------ */
+/* INFORMACIÓN DE LOS MAPAS AL PULSAR EL BOTÓN. */
+/* ------------------------------ */
+
+.info-mapas{
+    max-width: 1200px;
+    margin: auto;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 70px;
+}
+.oculto{
+    visibility: hidden;
+    position: absolute;
+    width: 80%;
+    background-color: rgba(0, 100, 5, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+}
+.oculto h1{
+    text-align: center;
+    font-family: var(--title);
+    color: white;
+}
+.oculto h2{
+    font-family: var(--title);
+    color: white;
+}
+.oculto p{
+    color: white;
+    text-align: justify;
+}
+
+/* ------------------- */
+/* ESTILOS DE MATERIALIZE */
+/* El Materialize servirá para el Carrousel de los mapas. */
+/* ------------------- */
+
+.carousel{
+    min-height: 500px;
+}
+
+.carousel .carousel-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    width: 500px;
+    height: 500px;
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.carousel-item input{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+.carousel-item input:hover {
+    background-color: #0b8010;
+    color: white;
+    padding: 3px;
+    border: 0;
+}
+
+/* RESPONSIVE cambiar tamaños de imagenes Carousel. */
+@media (max-width: 985px){
+    .carousel{
+        min-width: 400px;
+    }
+    .carousel .carousel-item{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 834px){
+    .carousel{
+        min-width: 300px;
+    }
+    .carousel .carousel-item{
+        width: 300px;
+        height: 300px;
+    }
+}
