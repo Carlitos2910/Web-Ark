@@ -1,0 +1,116 @@
+$title: 'Courier New', Courier, monospace;
+$text: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$width-pagina: 1200px;
+$bg-color: #1E1E1E;
+    
+/* CSS PARA EL APARTADO DE COMPRA DE LA WEB */
+.compra{
+    max-width: var(--tamaño-pagina);
+    padding-top: 80px;
+    margin: auto;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+/* CSS PARA EL APARTADO DE NOTICIAS RECIENTES */
+.fondo-noticias{
+    background-image: url('../images/Noticias/bg_noticias.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: $width-pagina;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+@media (max-width: 1199px){
+    .fondo-noticias{
+        background-image: url('../images/Noticias/bg_noticias600px.png');
+    }
+}
+@media (min-width: 1199px) and (max-width: 1799px){
+    .fondo-noticias{
+        background-image: url('../images/Noticias/bg_noticias1000px.png');
+    }
+}
+
+.noticia{
+    background-color: rgba(18, 19, 23, 0.9);
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid green;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+
+    &:hover, &:focus{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    }
+
+    img{
+        width: 100%;
+        border-bottom: 2px solid green;
+    }
+
+    h4{
+        font-family: $title;
+        color: #9ACD32;
+        font-size: large;
+    }
+
+    p{
+        color: white;
+        text-align: justify;
+        padding: 0 30px 10px 30px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 873px){
+    .fondo-noticias{
+        max-width: $width-pagina;
+        width: 96%;
+        background-image: none;
+        background-color: rgb(51, 53, 51);
+        border-radius: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .noticia{
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 28px;
+        width: 80%;
+
+        &:hover, &:focus{
+        -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+                transform: scale(0.9);
+        }
+
+    }
+}

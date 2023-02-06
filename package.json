@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "firebase": "^9.14.0",
+    "latest": "^0.2.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.1.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "sass": "^1.58.0"
+  },
+  "name": "web-ark",
+  "description": "This Project is using PHP version 8.1.1 and MySql (XAMPP).",
+  "version": "1.0.0",
+  "browserlist": "> 0.2%, not dead, last 4 versions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parcel:desarrollo": "parcel fuente/index.html",
+    "parcel:produccion": "parcel build fuente.index.html",
+    "limpieza": "rimraf dist",
+    "desarrollo": "npm-run-all limpieza parcel:desarrollo",
+    "produccion": "npm-run-all limpieza parcel:produccion"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlitos2910/Web-Ark.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carlitos2910/Web-Ark/issues"
+  },
+  "homepage": "https://github.com/Carlitos2910/Web-Ark#readme"
+}

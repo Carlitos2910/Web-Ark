@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/materialize.css">
     <script src="scripts/materialize.js"></script>
     <!-- CSS Normal -->
-    <link rel="stylesheet" href="styles/headerfooter.css">
+    <link rel="stylesheet" href="styles/headerfooter.min.css">
     <link rel="stylesheet" href="styles/maps.min.css">
     <title>Maps</title>
 </head>

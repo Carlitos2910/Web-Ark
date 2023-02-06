@@ -7,7 +7,7 @@
     <title>Index</title>
     <!-- <link rel="stylesheet" href="styles/style.css"> -->
     <link rel="stylesheet" href="styles/index.min.css">
-    <link rel="stylesheet" href="styles/headerfooter.css">
+    <link rel="stylesheet" href="styles/headerfooter.min.css">
 </head>
 <body>
 

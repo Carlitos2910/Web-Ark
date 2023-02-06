@@ -1,0 +1,16 @@
+$title: 'Courier New', Courier, monospace;
+$text: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$width-pagina: 1200px;
+$bg-color: #1E1E1E;
+
+    
+body{
+    font-family: $text;
+    margin: auto;
+    margin-top: 355px;
+    background-color: $bg-color;
+    background-image: url(../images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 0%;
+}
