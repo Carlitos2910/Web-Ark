@@ -15,12 +15,11 @@
   "name": "web-ark",
   "description": "This Project is using PHP version 8.1.1 and MySql (XAMPP).",
   "version": "1.0.0",
-  "browserlist": "> 0.2%, not dead, last 4 versions",
-  "main": "index.js",
+  "browserslist": "> 0.2%, not dead, last 4 versions",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "parcel:desarrollo": "parcel fuente/index.html",
-    "parcel:produccion": "parcel build fuente.index.html",
+    "parcel:desarrollo": "parcel index.php",
+    "parcel:produccion": "parcel build index.php",
     "limpieza": "rimraf dist",
     "desarrollo": "npm-run-all limpieza parcel:desarrollo",
     "produccion": "npm-run-all limpieza parcel:produccion"
@@ -29,7 +28,7 @@
     "type": "git",
     "url": "git+https://github.com/Carlitos2910/Web-Ark.git"
   },
-  "author": "",
+  "author": "Carlos",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Carlitos2910/Web-Ark/issues"
