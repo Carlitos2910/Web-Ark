@@ -6,8 +6,8 @@
     <title>Maps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS Normal -->
-    <link rel="stylesheet" href="styles/headerfooter.min.css">
-    <link rel="stylesheet" href="styles/maps.min.css">
+    <!-- <link rel="stylesheet" href="styles/headerfooter.min.css">
+    <link rel="stylesheet" href="styles/maps.min.css"> -->
 
     <!-- Materialize -->
     <link rel="stylesheet" href="styles/materialize.css">
@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="styles/body-min.css">
     <link rel="stylesheet" href="styles/header-min.css">
     <link rel="stylesheet" href="styles/footer-min.css">
-
     
     
 </head>

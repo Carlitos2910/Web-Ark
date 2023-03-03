@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* CSS PARA LA PÁGINA DINOSAURIOS */
+.dinosaurios {
+  text-align: center;
+  max-width: 1200px;
+  justify-content: center;
+  margin: auto;
+}
+.dinosaurios h1 {
+  font-family: var(--title);
+  color: white;
+  font-size: 40px;
+}
+
+.desplegable {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 2px 0 black;
+  border-radius: 2px;
+}
+
+.btn {
+  padding: 7px;
+  border-radius: 4px;
+  background-color: #009003;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.5s;
+}
+.btn:hover {
+  background-color: #00FF05;
+}
+
+.dossier {
+  display: flex;
+  flex-direction: row;
+}
+.dossier .dossier-img img {
+  width: 100%;
+}
+.dossier .dossier-texto {
+  color: white;
+  font-size: large;
+  width: 180%;
+  text-align: justify;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 809px) {
+  .dossier {
+    display: flex;
+    flex-direction: column;
+  }
+  .dossier .dossier-img img {
+    width: 80%;
+  }
+  .dossier .dossier-texto {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+  }
+}/*# sourceMappingURL=dinosaurs.css.map */

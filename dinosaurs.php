@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Dinosaurs </title>
-    <link rel="stylesheet" href="styles/dinosaurs.min.css">
-    <link rel="stylesheet" href="styles/headerfooter.min.css">
+    <!-- <link rel="stylesheet" href="styles/dinosaurs.min.css">
+    <link rel="stylesheet" href="styles/headerfooter.min.css"> -->
     
     
     <!-- LINK PARA MINIMIZE DEL CSS -->
