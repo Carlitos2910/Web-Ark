@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Maps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Materialize -->
-    <link rel="stylesheet" href="styles/materialize.css">
-    <script src="scripts/materialize.js"></script>
     <!-- CSS Normal -->
     <link rel="stylesheet" href="styles/headerfooter.min.css">
     <link rel="stylesheet" href="styles/maps.min.css">
-    <title>Maps</title>
+
+    <!-- Materialize -->
+    <link rel="stylesheet" href="styles/materialize.css">
+    <script src="scripts/materialize.js"></script>
+
+    <!-- LINK PARA MINIMIZE DEL CSS -->
+    <link rel="stylesheet" href="styles/maps-min.css">
+    <link rel="stylesheet" href="styles/body-min.css">
+    <link rel="stylesheet" href="styles/header-min.css">
+    <link rel="stylesheet" href="styles/footer-min.css">
+
+    
+    
 </head>
 <body>
 

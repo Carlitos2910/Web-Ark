@@ -1,0 +1,87 @@
+/* CSS PARA LA PÁGINA DINOSAURIOS */
+.dinosaurios{
+    text-align: center;
+    max-width: 1200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+
+    h1{
+        font-family: var(--title);
+        color: white;
+        font-size: 40px;
+    }
+}
+
+.desplegable {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    -webkit-box-shadow: 0 2px 0 black;
+            box-shadow: 0 2px 0 black;
+    border-radius: 2px;
+}
+
+.btn{
+    padding: 7px;
+    border-radius: 4px;
+    background-color: #009003;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+
+    &:hover{
+        background-color: #00FF05;
+    }
+}
+
+.dossier{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+    .dossier-img img{
+        width: 100%;
+    }
+
+    .dossier-texto{
+        color:white;
+        font-size: large;
+        width: 180%;
+        text-align: justify;
+        margin: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:809px){
+    .dossier{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+        .dossier-img img{
+            width: 80%;
+        }
+
+        .dossier-texto{
+            width: 80%;
+            margin: auto;
+            text-align: justify;
+        }
+    }
+}

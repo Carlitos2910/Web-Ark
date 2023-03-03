@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/headerfooter.min.css">
-    <link rel="stylesheet" href="styles/events.min.css">
+    <!-- <link rel="stylesheet" href="styles/headerfooter.min.css">
+    <link rel="stylesheet" href="styles/events.min.css"> -->
+
+    <!-- LINK PARA MINIMIZE DEL CSS -->
+    <link rel="stylesheet" href="styles/events-min.css">
+    <link rel="stylesheet" href="styles/body-min.css">
+    <link rel="stylesheet" href="styles/header-min.css">
+    <link rel="stylesheet" href="styles/footer-min.css">
+
     <title>Events</title>
 </head>
 <body>
