@@ -7,11 +7,11 @@ For running the website in your localhost apart from using XAMPP, you will need 
 * **Normal scss.**
 
   * index.scss
-* **Scss Formatter Will add this files.**
+* **Scss Formatter Will add this files (Use VsCode Extension called Live Sass Compiler).**
 
   * index.css
   * index.css.map
-* **Minify index.css and get the next file, that is already linked in the pages.**
+* **Minify index.css and get the next file, that is already linked in the pages (Use VsCode Extension called MinifyAll).**
 
   * index-min.css
 
