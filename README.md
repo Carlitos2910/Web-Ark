@@ -1,6 +1,6 @@
 # Web-Ark
 
-This Project is using PHP version 8.1.1 and MySql (XAMPP).
+This Project is using PHP version 8.1.1 and MySql (XAMPP), the database is inside his own folder.
 
 For running the website in your localhost apart from using XAMPP, you will need to transform de scss into css and also minify the css and you will get a file called "name"-min.css.
 
